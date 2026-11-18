@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --color-ink: #14213d;
+  --color-paper: #eaeef3;
+  --color-tape: #f2c230;
+}
+
+body { @apply min-h-screen bg-paper font-sans text-ink antialiased; }
+#reader video { border-radius: 1rem; }
+#reader { border: 0 !important; }
+.tape-strip { background: repeating-linear-gradient(90deg, #f2c230 0 2px, transparent 2px 10px); }
